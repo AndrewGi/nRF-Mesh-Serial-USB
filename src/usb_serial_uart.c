@@ -246,7 +246,6 @@ uint32_t serial_uart_init(serial_uart_rx_cb_t rx_cb, serial_uart_tx_cb_t tx_cb)
     app_usbd_start();
 
     __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "USB inited\n");
-    serial_uart_process(); //Process the USB events until none are left
     //Wait for usb port open
     while(is_open==false) 
 	serial_uart_process();

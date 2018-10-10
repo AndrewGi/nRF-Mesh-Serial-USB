@@ -15194,7 +15194,7 @@ FLASH            0x0000000000000000 0x00000000000f8000 xw
 
 Linker script and memory map
 
-                0x00000000000404a8                __vfprintf = __vfprintf_int
+                0x00000000000404a4                __vfprintf = __vfprintf_int
                 0x0000000000000000                __vfscanf = __vfscanf_int
                 0x0000000020000000                __RAM_segment_start__ = 0x20000000
                 0x000000002003f000                __RAM_segment_end__ = 0x2003f000
@@ -15332,7 +15332,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ >= __FLASH_segment_start__) && (__init_rodata_end__ <= __FLASH_segment_end__))), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x00000000000262f4                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x00000000000262f4    0x1a8c0
+.text           0x00000000000262f4    0x1a8bc
                 0x00000000000262f4                __text_start__ = .
  *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.* .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x00000000000262f4        0x0 linker stubs
@@ -17992,258 +17992,258 @@ Linker script and memory map
                 0x000000000003d820        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
                 0x000000000003d820                UARTE0_UART0_IRQHandler
  .text.serial_uart_init
-                0x000000000003d828       0xb8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+                0x000000000003d828       0xb4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
                 0x000000000003d828                serial_uart_init
  .text.serial_uart_receive_set
-                0x000000000003d8e0       0x54 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
-                0x000000000003d8e0                serial_uart_receive_set
+                0x000000000003d8dc       0x54 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+                0x000000000003d8dc                serial_uart_receive_set
  .text.serial_uart_byte_send
-                0x000000000003d934       0x68 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
-                0x000000000003d934                serial_uart_byte_send
+                0x000000000003d930       0x68 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+                0x000000000003d930                serial_uart_byte_send
  .text.app_usbd_ep_conf_access
-                0x000000000003d99c       0x28 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003d998       0x28 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
  .text.app_usbd_ep_instance_set
-                0x000000000003d9c4       0x1a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
- *fill*         0x000000000003d9de        0x2 
+                0x000000000003d9c0       0x1a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+ *fill*         0x000000000003d9da        0x2 
  .text.app_usbd_event_handler
-                0x000000000003d9e0       0xac build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003d9dc       0xac build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
  .text.app_usbd_hfclk_ready
-                0x000000000003da8c       0x70 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003da88       0x70 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
  .text.app_usbd_class_descriptor_find
-                0x000000000003dafc       0xb6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003dafc                app_usbd_class_descriptor_find
- *fill*         0x000000000003dbb2        0x2 
+                0x000000000003daf8       0xb6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003daf8                app_usbd_class_descriptor_find
+ *fill*         0x000000000003dbae        0x2 
  .text.app_usbd_init
-                0x000000000003dbb4       0xec build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003dbb4                app_usbd_init
+                0x000000000003dbb0       0xec build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dbb0                app_usbd_init
  .text.app_usbd_enable
-                0x000000000003dca0        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003dca0                app_usbd_enable
+                0x000000000003dc9c        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dc9c                app_usbd_enable
  .text.app_usbd_disable
-                0x000000000003dca8        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003dca8                app_usbd_disable
+                0x000000000003dca4        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dca4                app_usbd_disable
  .text.app_usbd_start
-                0x000000000003dcb0       0x8c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003dcb0                app_usbd_start
+                0x000000000003dcac       0x8c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dcac                app_usbd_start
  .text.app_usbd_stop
-                0x000000000003dd3c       0x70 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003dd3c                app_usbd_stop
+                0x000000000003dd38       0x70 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dd38                app_usbd_stop
  .text.app_usbd_class_append
-                0x000000000003ddac       0xbc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003ddac                app_usbd_class_append
+                0x000000000003dda8       0xbc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dda8                app_usbd_class_append
  .text.app_usbd_class_rwu_enabled_check
-                0x000000000003de68       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003de68                app_usbd_class_rwu_enabled_check
+                0x000000000003de64       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003de64                app_usbd_class_rwu_enabled_check
  .text.app_usbd_ep_enable
-                0x000000000003de78       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003de78                app_usbd_ep_enable
+                0x000000000003de74       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003de74                app_usbd_ep_enable
  .text.app_usbd_ep_disable
-                0x000000000003de98        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003de98                app_usbd_ep_disable
+                0x000000000003de94        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003de94                app_usbd_ep_disable
  .text.app_usbd_class_first_get
-                0x000000000003dea0        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003dea0                app_usbd_class_first_get
+                0x000000000003de9c        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003de9c                app_usbd_class_first_get
  .text.app_usbd_class_sof_first_get
-                0x000000000003deac        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003deac                app_usbd_class_sof_first_get
+                0x000000000003dea8        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dea8                app_usbd_class_sof_first_get
  .text.app_usbd_iface_find
-                0x000000000003deb8       0x34 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003deb8                app_usbd_iface_find
+                0x000000000003deb4       0x34 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003deb4                app_usbd_iface_find
  .text.app_usbd_iface_call
-                0x000000000003deec        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003deec                app_usbd_iface_call
+                0x000000000003dee8        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dee8                app_usbd_iface_call
  .text.app_usbd_ep_call
-                0x000000000003def8       0x26 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003def8                app_usbd_ep_call
+                0x000000000003def4       0x26 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003def4                app_usbd_ep_call
  .text.app_usbd_all_call
-                0x000000000003df1e       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003df1e                app_usbd_all_call
+                0x000000000003df1a       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003df1a                app_usbd_all_call
  .text.app_usbd_all_until_served_call
-                0x000000000003df3e       0x24 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003df3e                app_usbd_all_until_served_call
- *fill*         0x000000000003df62        0x2 
+                0x000000000003df3a       0x24 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003df3a                app_usbd_all_until_served_call
+ *fill*         0x000000000003df5e        0x2 
  .text.app_usbd_ep_transfer
-                0x000000000003df64       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003df64                app_usbd_ep_transfer
+                0x000000000003df60       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003df60                app_usbd_ep_transfer
  .text.app_usbd_ep_handled_transfer
-                0x000000000003df90       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003df90                app_usbd_ep_handled_transfer
+                0x000000000003df8c       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003df8c                app_usbd_ep_handled_transfer
  .text.app_usbd_iface_select
-                0x000000000003dfbc       0x54 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003dfbc                app_usbd_iface_select
+                0x000000000003dfb8       0x54 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003dfb8                app_usbd_iface_select
  .text.app_usbd_iface_deselect
-                0x000000000003e010       0x46 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003e010                app_usbd_iface_deselect
+                0x000000000003e00c       0x46 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003e00c                app_usbd_iface_deselect
  .text.app_usbd_iface_selection_get
-                0x000000000003e056       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003e056                app_usbd_iface_selection_get
+                0x000000000003e052       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003e052                app_usbd_iface_selection_get
  .text.app_usbd_all_iface_select_0
-                0x000000000003e066       0x2a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003e066                app_usbd_all_iface_select_0
+                0x000000000003e062       0x2a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003e062                app_usbd_all_iface_select_0
  .text.app_usbd_all_iface_deselect
-                0x000000000003e090       0x28 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003e090                app_usbd_all_iface_deselect
+                0x000000000003e08c       0x28 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003e08c                app_usbd_all_iface_deselect
  .text.app_usbd_event_execute
-                0x000000000003e0b8      0x584 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003e0b8                app_usbd_event_execute
+                0x000000000003e0b4      0x584 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003e0b4                app_usbd_event_execute
  .text.app_usbd_event_queue_process
-                0x000000000003e63c       0xc4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
-                0x000000000003e63c                app_usbd_event_queue_process
+                0x000000000003e638       0xc4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+                0x000000000003e638                app_usbd_event_queue_process
  .text.setup_data_handler_empty
-                0x000000000003e700        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003e6fc        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.usbd_descriptor_conf_feeder
-                0x000000000003e704       0xfa build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
- *fill*         0x000000000003e7fe        0x2 
+                0x000000000003e700       0xfa build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+ *fill*         0x000000000003e7fa        0x2 
  .text.usbd_core_state_set
-                0x000000000003e800       0x30 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003e7fc       0x30 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.setup_device_req_set_configuration
-                0x000000000003e830       0x40 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003e82c       0x40 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.app_usbd_core_setup_data_handler_set
-                0x000000000003e870       0x24 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
-                0x000000000003e870                app_usbd_core_setup_data_handler_set
+                0x000000000003e86c       0x24 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003e86c                app_usbd_core_setup_data_handler_set
  .text.app_usbd_core_setup_rsp
-                0x000000000003e894       0x6c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
-                0x000000000003e894                app_usbd_core_setup_rsp
+                0x000000000003e890       0x6c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003e890                app_usbd_core_setup_rsp
  .text.app_usbd_core_setup_transfer_buff_get
-                0x000000000003e900       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
-                0x000000000003e900                app_usbd_core_setup_transfer_buff_get
+                0x000000000003e8fc       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003e8fc                app_usbd_core_setup_transfer_buff_get
  .text.setup_device_req_get_status
-                0x000000000003e910       0x3c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003e90c       0x3c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.setup_device_req_get_descriptor
-                0x000000000003e94c      0x110 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003e948      0x110 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.setup_device_req_get_configuration
-                0x000000000003ea5c       0x38 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003ea58       0x38 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.setup_device_req_std_handler
-                0x000000000003ea94       0xc4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003ea90       0xc4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.setup_interface_req_std_handle
-                0x000000000003eb58       0x9c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003eb54       0x9c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.setup_endpoint_req_std
-                0x000000000003ebf4       0xb4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003ebf0       0xb4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.app_usbd_core_event_handler
-                0x000000000003eca8      0x1fc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x000000000003eca4      0x1fc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .text.string_create
-                0x000000000003eea4       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_serial_num.o
+                0x000000000003eea0       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_serial_num.o
  .text.app_usbd_serial_num_generate
-                0x000000000003eed0       0x38 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_serial_num.o
-                0x000000000003eed0                app_usbd_serial_num_generate
+                0x000000000003eecc       0x38 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_serial_num.o
+                0x000000000003eecc                app_usbd_serial_num_generate
  .text.app_usbd_string_desc_get
-                0x000000000003ef08       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
-                0x000000000003ef08                app_usbd_string_desc_get
+                0x000000000003ef04       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+                0x000000000003ef04                app_usbd_string_desc_get
  .text.setup_req_std_out
-                0x000000000003ef34        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003ef30        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.cdc_acm_reset_port
-                0x000000000003ef38       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003ef34       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.cdc_acm_consumer
-                0x000000000003ef54       0x32 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
- *fill*         0x000000000003ef86        0x2 
+                0x000000000003ef50       0x32 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+ *fill*         0x000000000003ef82        0x2 
  .text.cdc_acm_feed_descriptors
-                0x000000000003ef88      0xa9c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003ef84      0xa9c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.setup_req_std_in
-                0x000000000003fa24       0x52 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fa20       0x52 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.setup_req_class_in
-                0x000000000003fa76       0x2a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fa72       0x2a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.cdc_acm_req_out_datastage
-                0x000000000003faa0       0x58 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fa9c       0x58 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.setup_req_class_out
-                0x000000000003faf8       0xbc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003faf4       0xbc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.setup_event_handler
-                0x000000000003fbb4       0x3c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fbb0       0x3c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.cdc_acm_req_out_data_cb
-                0x000000000003fbf0       0x2a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
- *fill*         0x000000000003fc1a        0x2 
+                0x000000000003fbec       0x2a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+ *fill*         0x000000000003fc16        0x2 
  .text.cdc_acm_rx_block_finished
-                0x000000000003fc1c      0x13c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fc18      0x13c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.cdc_acm_endpoint_ev
-                0x000000000003fd58       0x76 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fd54       0x76 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.cdc_acm_event_handler
-                0x000000000003fdce       0x40 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fdca       0x40 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
  .text.app_usbd_cdc_acm_write
-                0x000000000003fe0e       0x40 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
-                0x000000000003fe0e                app_usbd_cdc_acm_write
+                0x000000000003fe0a       0x40 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fe0a                app_usbd_cdc_acm_write
  .text.app_usbd_cdc_acm_rx_size
-                0x000000000003fe4e        0x6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
-                0x000000000003fe4e                app_usbd_cdc_acm_rx_size
+                0x000000000003fe4a        0x6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fe4a                app_usbd_cdc_acm_rx_size
  .text.app_usbd_cdc_acm_read
-                0x000000000003fe54       0xb8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
-                0x000000000003fe54                app_usbd_cdc_acm_read
+                0x000000000003fe50       0xb8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x000000000003fe50                app_usbd_cdc_acm_read
  .text.sd_evt_get
-                0x000000000003ff0c        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
+                0x000000000003ff08        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
  .text.nrf_sdh_soc_evts_poll
-                0x000000000003ff10       0x40 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
+                0x000000000003ff0c       0x40 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
  .text.nrf_section_iter_init
-                0x000000000003ff50       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_section_iter.o
-                0x000000000003ff50                nrf_section_iter_init
+                0x000000000003ff4c       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_section_iter.o
+                0x000000000003ff4c                nrf_section_iter_init
  .text.nrf_section_iter_next
-                0x000000000003ff64       0x1a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_section_iter.o
-                0x000000000003ff64                nrf_section_iter_next
+                0x000000000003ff60       0x1a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_section_iter.o
+                0x000000000003ff60                nrf_section_iter_next
  .text.sd_clock_hfclk_request
-                0x000000000003ff7e        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
+                0x000000000003ff7a        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
  .text.sd_clock_hfclk_release
-                0x000000000003ff82        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
+                0x000000000003ff7e        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
  .text.sd_clock_hfclk_is_running
-                0x000000000003ff86        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
- *fill*         0x000000000003ff8a        0x2 
+                0x000000000003ff82        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
+ *fill*         0x000000000003ff86        0x2 
  .text.nrf_drv_clock_hfclk_request
-                0x000000000003ff8c       0x68 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
-                0x000000000003ff8c                nrf_drv_clock_hfclk_request
+                0x000000000003ff88       0x68 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
+                0x000000000003ff88                nrf_drv_clock_hfclk_request
  .text.nrf_drv_clock_hfclk_release
-                0x000000000003fff4       0x4c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
-                0x000000000003fff4                nrf_drv_clock_hfclk_release
+                0x000000000003fff0       0x4c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
+                0x000000000003fff0                nrf_drv_clock_hfclk_release
  .text.libc.__int64_udivmod
-                0x0000000000040040       0xce G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc_asm.o)
-                0x0000000000040040                __aeabi_uldivmod
-                0x0000000000040040                __int64_udiv
-                0x0000000000040040                __udivdi3
-                0x0000000000040040                __int64_udivmod
+                0x000000000004003c       0xce G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc_asm.o)
+                0x000000000004003c                __aeabi_uldivmod
+                0x000000000004003c                __int64_udiv
+                0x000000000004003c                __udivdi3
+                0x000000000004003c                __int64_udivmod
  .text.libc.__putc
-                0x000000000004010e       0x34 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000000004010e                __putc
+                0x000000000004010a       0x34 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x000000000004010a                __putc
  .text.libc.__RAL_print_padding
-                0x0000000000040142       0x1c G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000040142                __RAL_print_padding
+                0x000000000004013e       0x1c G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x000000000004013e                __RAL_print_padding
  .text.libc.__RAL_pre_padding
-                0x000000000004015e       0x1c G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000000004015e                __RAL_pre_padding
- *fill*         0x000000000004017a        0x2 
+                0x000000000004015a       0x1c G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x000000000004015a                __RAL_pre_padding
+ *fill*         0x0000000000040176        0x2 
  .text.libc.malloc
-                0x000000000004017c       0x94 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000000004017c                malloc
+                0x0000000000040178       0x94 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000040178                malloc
  .text.libc.free
-                0x0000000000040210       0xc8 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000040210                free
+                0x000000000004020c       0xc8 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x000000000004020c                free
  .text.libc.memcmp
-                0x00000000000402d8       0x6c G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000402d8                memcmp
+                0x00000000000402d4       0x6c G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000402d4                memcmp
  .text.libc.snprintf
-                0x0000000000040344       0x28 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000040344                snprintf
+                0x0000000000040340       0x28 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000040340                snprintf
  .text.libc.strnlen
-                0x000000000004036c       0x20 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000000004036c                strnlen
+                0x0000000000040368       0x20 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000040368                strnlen
  .text.libc.memcpy
-                0x000000000004038c       0x52 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x000000000004038c                __aeabi_memcpy
-                0x000000000004038c                memcpy
-                0x0000000000040398                __aeabi_memcpy8
-                0x0000000000040398                __aeabi_memcpy4
+                0x0000000000040388       0x52 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x0000000000040388                __aeabi_memcpy
+                0x0000000000040388                memcpy
+                0x0000000000040394                __aeabi_memcpy8
+                0x0000000000040394                __aeabi_memcpy4
  .text.libc.memset
-                0x00000000000403de       0x66 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x00000000000403de                memset
+                0x00000000000403da       0x66 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x00000000000403da                memset
  .text.libc.strlen
-                0x0000000000040444       0x60 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x0000000000040444                strlen
+                0x0000000000040440       0x60 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x0000000000040440                strlen
  .text.libc.__heap_lock
-                0x00000000000404a4        0x2 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc.o)
-                0x00000000000404a4                __heap_lock
+                0x00000000000404a0        0x2 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc.o)
+                0x00000000000404a0                __heap_lock
  .text.libc.__heap_unlock
-                0x00000000000404a6        0x2 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc.o)
-                0x00000000000404a6                __heap_unlock
+                0x00000000000404a2        0x2 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc.o)
+                0x00000000000404a2                __heap_unlock
  .text.libc.__vfprintf_int
-                0x00000000000404a8      0x70c G:/Programing/Segger/lib/libvfprintf_v7em_fpv4_sp_d16_hard_t_le_eabi.o
-                0x00000000000404a8                __vfprintf_int
-                0x0000000000040bb4                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x000000000001a8c0                __text_size__ = SIZEOF (.text)
-                0x0000000000040bb4                __text_load_end__ = __text_end__
+                0x00000000000404a4      0x70c G:/Programing/Segger/lib/libvfprintf_v7em_fpv4_sp_d16_hard_t_le_eabi.o
+                0x00000000000404a4                __vfprintf_int
+                0x0000000000040bb0                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x000000000001a8bc                __text_size__ = SIZEOF (.text)
+                0x0000000000040bb0                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -18254,158 +18254,158 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ >= __FLASH_segment_start__) && (__text_end__ <= __FLASH_segment_end__))), error: .text is too large to fit in FLASH memory segment)
-                0x0000000000040bb4                __sdh_soc_observers_load_start__ = ALIGN (__text_end__, 0x4)
+                0x0000000000040bb0                __sdh_soc_observers_load_start__ = ALIGN (__text_end__, 0x4)
 
 .sdh_soc_observers
-                0x0000000000040bb4        0x8
-                0x0000000000040bb4                __sdh_soc_observers_start__ = .
-                0x0000000000040bb4                __start_sdh_soc_observers = __sdh_soc_observers_start__
+                0x0000000000040bb0        0x8
+                0x0000000000040bb0                __sdh_soc_observers_start__ = .
+                0x0000000000040bb0                __start_sdh_soc_observers = __sdh_soc_observers_start__
  *(SORT_BY_NAME(.sdh_soc_observers*))
  .sdh_soc_observers0
-                0x0000000000040bb4        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_power.o
-                0x0000000000040bbc                __sdh_soc_observers_end__ = (__sdh_soc_observers_start__ + SIZEOF (.sdh_soc_observers))
+                0x0000000000040bb0        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_power.o
+                0x0000000000040bb8                __sdh_soc_observers_end__ = (__sdh_soc_observers_start__ + SIZEOF (.sdh_soc_observers))
                 0x0000000000000008                __sdh_soc_observers_size__ = SIZEOF (.sdh_soc_observers)
-                0x0000000000040bbc                __stop_sdh_soc_observers = __sdh_soc_observers_end__
-                0x0000000000040bbc                __sdh_soc_observers_load_end__ = __sdh_soc_observers_end__
+                0x0000000000040bb8                __stop_sdh_soc_observers = __sdh_soc_observers_end__
+                0x0000000000040bb8                __sdh_soc_observers_load_end__ = __sdh_soc_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_soc_observers_start__ == __sdh_soc_observers_end__) || ((__sdh_soc_observers_end__ >= __FLASH_segment_start__) && (__sdh_soc_observers_end__ <= __FLASH_segment_end__))), error: .sdh_soc_observers is too large to fit in FLASH memory segment)
-                0x0000000000040bbc                __sdh_ble_observers_load_start__ = ALIGN (__sdh_soc_observers_end__, 0x4)
+                0x0000000000040bb8                __sdh_ble_observers_load_start__ = ALIGN (__sdh_soc_observers_end__, 0x4)
 
 .sdh_ble_observers
-                0x0000000000040bbc        0x0
-                0x0000000000040bbc                __sdh_ble_observers_start__ = .
-                0x0000000000040bbc                __start_sdh_ble_observers = __sdh_ble_observers_start__
+                0x0000000000040bb8        0x0
+                0x0000000000040bb8                __sdh_ble_observers_start__ = .
+                0x0000000000040bb8                __start_sdh_ble_observers = __sdh_ble_observers_start__
  *(SORT_BY_NAME(.sdh_ble_observers*))
-                0x0000000000040bbc                __sdh_ble_observers_end__ = (__sdh_ble_observers_start__ + SIZEOF (.sdh_ble_observers))
+                0x0000000000040bb8                __sdh_ble_observers_end__ = (__sdh_ble_observers_start__ + SIZEOF (.sdh_ble_observers))
                 0x0000000000000000                __sdh_ble_observers_size__ = SIZEOF (.sdh_ble_observers)
-                0x0000000000040bbc                __stop_sdh_ble_observers = __sdh_ble_observers_end__
-                0x0000000000040bbc                __sdh_ble_observers_load_end__ = __sdh_ble_observers_end__
+                0x0000000000040bb8                __stop_sdh_ble_observers = __sdh_ble_observers_end__
+                0x0000000000040bb8                __sdh_ble_observers_load_end__ = __sdh_ble_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_ble_observers_start__ == __sdh_ble_observers_end__) || ((__sdh_ble_observers_end__ >= __FLASH_segment_start__) && (__sdh_ble_observers_end__ <= __FLASH_segment_end__))), error: .sdh_ble_observers is too large to fit in FLASH memory segment)
-                0x0000000000040bbc                __pwr_mgmt_data_load_start__ = ALIGN (__sdh_ble_observers_end__, 0x4)
+                0x0000000000040bb8                __pwr_mgmt_data_load_start__ = ALIGN (__sdh_ble_observers_end__, 0x4)
 
-.pwr_mgmt_data  0x0000000000040bbc        0x0
-                0x0000000000040bbc                __pwr_mgmt_data_start__ = .
-                0x0000000000040bbc                __start_pwr_mgmt_data = __pwr_mgmt_data_start__
+.pwr_mgmt_data  0x0000000000040bb8        0x0
+                0x0000000000040bb8                __pwr_mgmt_data_start__ = .
+                0x0000000000040bb8                __start_pwr_mgmt_data = __pwr_mgmt_data_start__
  *(SORT_BY_NAME(.pwr_mgmt_data*))
-                0x0000000000040bbc                __pwr_mgmt_data_end__ = (__pwr_mgmt_data_start__ + SIZEOF (.pwr_mgmt_data))
+                0x0000000000040bb8                __pwr_mgmt_data_end__ = (__pwr_mgmt_data_start__ + SIZEOF (.pwr_mgmt_data))
                 0x0000000000000000                __pwr_mgmt_data_size__ = SIZEOF (.pwr_mgmt_data)
-                0x0000000000040bbc                __stop_pwr_mgmt_data = __pwr_mgmt_data_end__
-                0x0000000000040bbc                __pwr_mgmt_data_load_end__ = __pwr_mgmt_data_end__
+                0x0000000000040bb8                __stop_pwr_mgmt_data = __pwr_mgmt_data_end__
+                0x0000000000040bb8                __pwr_mgmt_data_load_end__ = __pwr_mgmt_data_end__
                 0x0000000000000001                . = ASSERT (((__pwr_mgmt_data_start__ == __pwr_mgmt_data_end__) || ((__pwr_mgmt_data_end__ >= __FLASH_segment_start__) && (__pwr_mgmt_data_end__ <= __FLASH_segment_end__))), error: .pwr_mgmt_data is too large to fit in FLASH memory segment)
-                0x0000000000040bbc                __log_const_data_load_start__ = ALIGN (__pwr_mgmt_data_end__, 0x4)
+                0x0000000000040bb8                __log_const_data_load_start__ = ALIGN (__pwr_mgmt_data_end__, 0x4)
 
 .log_const_data
-                0x0000000000040bbc        0x0
-                0x0000000000040bbc                __log_const_data_start__ = .
-                0x0000000000040bbc                __start_log_const_data = __log_const_data_start__
+                0x0000000000040bb8        0x0
+                0x0000000000040bb8                __log_const_data_start__ = .
+                0x0000000000040bb8                __start_log_const_data = __log_const_data_start__
  *(SORT_BY_NAME(.log_const_data*))
-                0x0000000000040bbc                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
+                0x0000000000040bb8                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
                 0x0000000000000000                __log_const_data_size__ = SIZEOF (.log_const_data)
-                0x0000000000040bbc                __stop_log_const_data = __log_const_data_end__
-                0x0000000000040bbc                __log_const_data_load_end__ = __log_const_data_end__
+                0x0000000000040bb8                __stop_log_const_data = __log_const_data_end__
+                0x0000000000040bb8                __log_const_data_load_end__ = __log_const_data_end__
                 0x0000000000000001                . = ASSERT (((__log_const_data_start__ == __log_const_data_end__) || ((__log_const_data_end__ >= __FLASH_segment_start__) && (__log_const_data_end__ <= __FLASH_segment_end__))), error: .log_const_data is too large to fit in FLASH memory segment)
-                0x0000000000040bbc                __nrf_balloc_load_start__ = ALIGN (__log_const_data_end__, 0x4)
+                0x0000000000040bb8                __nrf_balloc_load_start__ = ALIGN (__log_const_data_end__, 0x4)
 
-.nrf_balloc     0x0000000000040bbc        0x0
-                0x0000000000040bbc                __nrf_balloc_start__ = .
-                0x0000000000040bbc                __start_nrf_balloc = __nrf_balloc_start__
+.nrf_balloc     0x0000000000040bb8        0x0
+                0x0000000000040bb8                __nrf_balloc_start__ = .
+                0x0000000000040bb8                __start_nrf_balloc = __nrf_balloc_start__
  *(.nrf_balloc*)
-                0x0000000000040bbc                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
+                0x0000000000040bb8                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
                 0x0000000000000000                __nrf_balloc_size__ = SIZEOF (.nrf_balloc)
-                0x0000000000040bbc                __stop_nrf_balloc = __nrf_balloc_end__
-                0x0000000000040bbc                __nrf_balloc_load_end__ = __nrf_balloc_end__
+                0x0000000000040bb8                __stop_nrf_balloc = __nrf_balloc_end__
+                0x0000000000040bb8                __nrf_balloc_load_end__ = __nrf_balloc_end__
                 0x0000000000000001                . = ASSERT (((__nrf_balloc_start__ == __nrf_balloc_end__) || ((__nrf_balloc_end__ >= __FLASH_segment_start__) && (__nrf_balloc_end__ <= __FLASH_segment_end__))), error: .nrf_balloc is too large to fit in FLASH memory segment)
-                0x0000000000040bbc                __sdh_state_observers_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
+                0x0000000000040bb8                __sdh_state_observers_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
 
 .sdh_state_observers
-                0x0000000000040bbc        0x8
-                0x0000000000040bbc                __sdh_state_observers_start__ = .
-                0x0000000000040bbc                __start_sdh_state_observers = __sdh_state_observers_start__
+                0x0000000000040bb8        0x8
+                0x0000000000040bb8                __sdh_state_observers_start__ = .
+                0x0000000000040bb8                __start_sdh_state_observers = __sdh_state_observers_start__
  *(SORT_BY_NAME(.sdh_state_observers*))
  .sdh_state_observers0
-                0x0000000000040bbc        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_power.o
-                0x0000000000040bc4                __sdh_state_observers_end__ = (__sdh_state_observers_start__ + SIZEOF (.sdh_state_observers))
+                0x0000000000040bb8        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_power.o
+                0x0000000000040bc0                __sdh_state_observers_end__ = (__sdh_state_observers_start__ + SIZEOF (.sdh_state_observers))
                 0x0000000000000008                __sdh_state_observers_size__ = SIZEOF (.sdh_state_observers)
-                0x0000000000040bc4                __stop_sdh_state_observers = __sdh_state_observers_end__
-                0x0000000000040bc4                __sdh_state_observers_load_end__ = __sdh_state_observers_end__
+                0x0000000000040bc0                __stop_sdh_state_observers = __sdh_state_observers_end__
+                0x0000000000040bc0                __sdh_state_observers_load_end__ = __sdh_state_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_state_observers_start__ == __sdh_state_observers_end__) || ((__sdh_state_observers_end__ >= __FLASH_segment_start__) && (__sdh_state_observers_end__ <= __FLASH_segment_end__))), error: .sdh_state_observers is too large to fit in FLASH memory segment)
-                0x0000000000040bc4                __sdh_stack_observers_load_start__ = ALIGN (__sdh_state_observers_end__, 0x4)
+                0x0000000000040bc0                __sdh_stack_observers_load_start__ = ALIGN (__sdh_state_observers_end__, 0x4)
 
 .sdh_stack_observers
-                0x0000000000040bc4        0x8
-                0x0000000000040bc4                __sdh_stack_observers_start__ = .
-                0x0000000000040bc4                __start_sdh_stack_observers = __sdh_stack_observers_start__
+                0x0000000000040bc0        0x8
+                0x0000000000040bc0                __sdh_stack_observers_start__ = .
+                0x0000000000040bc0                __start_sdh_stack_observers = __sdh_stack_observers_start__
  *(SORT_BY_NAME(.sdh_stack_observers*))
  .sdh_stack_observers0
-                0x0000000000040bc4        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
-                0x0000000000040bcc                __sdh_stack_observers_end__ = (__sdh_stack_observers_start__ + SIZEOF (.sdh_stack_observers))
+                0x0000000000040bc0        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
+                0x0000000000040bc8                __sdh_stack_observers_end__ = (__sdh_stack_observers_start__ + SIZEOF (.sdh_stack_observers))
                 0x0000000000000008                __sdh_stack_observers_size__ = SIZEOF (.sdh_stack_observers)
-                0x0000000000040bcc                __stop_sdh_stack_observers = __sdh_stack_observers_end__
-                0x0000000000040bcc                __sdh_stack_observers_load_end__ = __sdh_stack_observers_end__
+                0x0000000000040bc8                __stop_sdh_stack_observers = __sdh_stack_observers_end__
+                0x0000000000040bc8                __sdh_stack_observers_load_end__ = __sdh_stack_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_stack_observers_start__ == __sdh_stack_observers_end__) || ((__sdh_stack_observers_end__ >= __FLASH_segment_start__) && (__sdh_stack_observers_end__ <= __FLASH_segment_end__))), error: .sdh_stack_observers is too large to fit in FLASH memory segment)
-                0x0000000000040bcc                __sdh_req_observers_load_start__ = ALIGN (__sdh_stack_observers_end__, 0x4)
+                0x0000000000040bc8                __sdh_req_observers_load_start__ = ALIGN (__sdh_stack_observers_end__, 0x4)
 
 .sdh_req_observers
-                0x0000000000040bcc        0x0
-                0x0000000000040bcc                __sdh_req_observers_start__ = .
-                0x0000000000040bcc                __start_sdh_req_observers = __sdh_req_observers_start__
+                0x0000000000040bc8        0x0
+                0x0000000000040bc8                __sdh_req_observers_start__ = .
+                0x0000000000040bc8                __start_sdh_req_observers = __sdh_req_observers_start__
  *(SORT_BY_NAME(.sdh_req_observers*))
-                0x0000000000040bcc                __sdh_req_observers_end__ = (__sdh_req_observers_start__ + SIZEOF (.sdh_req_observers))
+                0x0000000000040bc8                __sdh_req_observers_end__ = (__sdh_req_observers_start__ + SIZEOF (.sdh_req_observers))
                 0x0000000000000000                __sdh_req_observers_size__ = SIZEOF (.sdh_req_observers)
-                0x0000000000040bcc                __stop_sdh_req_observers = __sdh_req_observers_end__
-                0x0000000000040bcc                __sdh_req_observers_load_end__ = __sdh_req_observers_end__
+                0x0000000000040bc8                __stop_sdh_req_observers = __sdh_req_observers_end__
+                0x0000000000040bc8                __sdh_req_observers_load_end__ = __sdh_req_observers_end__
                 0x0000000000000001                . = ASSERT (((__sdh_req_observers_start__ == __sdh_req_observers_end__) || ((__sdh_req_observers_end__ >= __FLASH_segment_start__) && (__sdh_req_observers_end__ <= __FLASH_segment_end__))), error: .sdh_req_observers is too large to fit in FLASH memory segment)
-                0x0000000000040bcc                __nrf_queue_load_start__ = ALIGN (__sdh_req_observers_end__, 0x4)
+                0x0000000000040bc8                __nrf_queue_load_start__ = ALIGN (__sdh_req_observers_end__, 0x4)
 
-.nrf_queue      0x0000000000040bcc        0x0
-                0x0000000000040bcc                __nrf_queue_start__ = .
-                0x0000000000040bcc                __start_nrf_queue = __nrf_queue_start__
+.nrf_queue      0x0000000000040bc8        0x0
+                0x0000000000040bc8                __nrf_queue_start__ = .
+                0x0000000000040bc8                __start_nrf_queue = __nrf_queue_start__
  *(.nrf_queue*)
-                0x0000000000040bcc                __nrf_queue_end__ = (__nrf_queue_start__ + SIZEOF (.nrf_queue))
+                0x0000000000040bc8                __nrf_queue_end__ = (__nrf_queue_start__ + SIZEOF (.nrf_queue))
                 0x0000000000000000                __nrf_queue_size__ = SIZEOF (.nrf_queue)
-                0x0000000000040bcc                __stop_nrf_queue = __nrf_queue_end__
-                0x0000000000040bcc                __nrf_queue_load_end__ = __nrf_queue_end__
+                0x0000000000040bc8                __stop_nrf_queue = __nrf_queue_end__
+                0x0000000000040bc8                __nrf_queue_load_end__ = __nrf_queue_end__
                 0x0000000000000001                . = ASSERT (((__nrf_queue_start__ == __nrf_queue_end__) || ((__nrf_queue_end__ >= __FLASH_segment_start__) && (__nrf_queue_end__ <= __FLASH_segment_end__))), error: .nrf_queue is too large to fit in FLASH memory segment)
-                0x0000000000040bcc                __cli_command_load_start__ = ALIGN (__nrf_queue_end__, 0x4)
+                0x0000000000040bc8                __cli_command_load_start__ = ALIGN (__nrf_queue_end__, 0x4)
 
-.cli_command    0x0000000000040bcc        0x0
-                0x0000000000040bcc                __cli_command_start__ = .
-                0x0000000000040bcc                __start_cli_command = __cli_command_start__
+.cli_command    0x0000000000040bc8        0x0
+                0x0000000000040bc8                __cli_command_start__ = .
+                0x0000000000040bc8                __start_cli_command = __cli_command_start__
  *(.cli_command*)
-                0x0000000000040bcc                __cli_command_end__ = (__cli_command_start__ + SIZEOF (.cli_command))
+                0x0000000000040bc8                __cli_command_end__ = (__cli_command_start__ + SIZEOF (.cli_command))
                 0x0000000000000000                __cli_command_size__ = SIZEOF (.cli_command)
-                0x0000000000040bcc                __stop_cli_command = __cli_command_end__
-                0x0000000000040bcc                __cli_command_load_end__ = __cli_command_end__
+                0x0000000000040bc8                __stop_cli_command = __cli_command_end__
+                0x0000000000040bc8                __cli_command_load_end__ = __cli_command_end__
                 0x0000000000000001                . = ASSERT (((__cli_command_start__ == __cli_command_end__) || ((__cli_command_end__ >= __FLASH_segment_start__) && (__cli_command_end__ <= __FLASH_segment_end__))), error: .cli_command is too large to fit in FLASH memory segment)
-                0x0000000000040bcc                __crypto_data_load_start__ = ALIGN (__cli_command_end__, 0x4)
+                0x0000000000040bc8                __crypto_data_load_start__ = ALIGN (__cli_command_end__, 0x4)
 
-.crypto_data    0x0000000000040bcc        0x0
-                0x0000000000040bcc                __crypto_data_start__ = .
-                0x0000000000040bcc                __start_crypto_data = __crypto_data_start__
+.crypto_data    0x0000000000040bc8        0x0
+                0x0000000000040bc8                __crypto_data_start__ = .
+                0x0000000000040bc8                __start_crypto_data = __crypto_data_start__
  *(SORT_BY_NAME(.crypto_data*))
-                0x0000000000040bcc                __crypto_data_end__ = (__crypto_data_start__ + SIZEOF (.crypto_data))
+                0x0000000000040bc8                __crypto_data_end__ = (__crypto_data_start__ + SIZEOF (.crypto_data))
                 0x0000000000000000                __crypto_data_size__ = SIZEOF (.crypto_data)
-                0x0000000000040bcc                __stop_crypto_data = __crypto_data_end__
-                0x0000000000040bcc                __crypto_data_load_end__ = __crypto_data_end__
+                0x0000000000040bc8                __stop_crypto_data = __crypto_data_end__
+                0x0000000000040bc8                __crypto_data_load_end__ = __crypto_data_end__
                 0x0000000000000001                . = ASSERT (((__crypto_data_start__ == __crypto_data_end__) || ((__crypto_data_end__ >= __FLASH_segment_start__) && (__crypto_data_end__ <= __FLASH_segment_end__))), error: .crypto_data is too large to fit in FLASH memory segment)
-                0x0000000000040bcc                __nrf_sections_load_start__ = ALIGN (__crypto_data_end__, 0x4)
+                0x0000000000040bc8                __nrf_sections_load_start__ = ALIGN (__crypto_data_end__, 0x4)
 
-.nrf_sections   0x0000000000040bcc        0x0
-                0x0000000000040bcc                __nrf_sections_start__ = .
-                0x0000000000040bcc                __start_nrf_sections = __nrf_sections_start__
+.nrf_sections   0x0000000000040bc8        0x0
+                0x0000000000040bc8                __nrf_sections_start__ = .
+                0x0000000000040bc8                __start_nrf_sections = __nrf_sections_start__
  *(.nrf_sections .nrf_sections.*)
-                0x0000000000040bcc                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
+                0x0000000000040bc8                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
                 0x0000000000000000                __nrf_sections_size__ = SIZEOF (.nrf_sections)
-                0x0000000000040bcc                __nrf_sections_load_end__ = __nrf_sections_end__
+                0x0000000000040bc8                __nrf_sections_load_end__ = __nrf_sections_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_start__ == __nrf_sections_end__) || ((__nrf_sections_end__ >= __FLASH_segment_start__) && (__nrf_sections_end__ <= __FLASH_segment_end__))), error: .nrf_sections is too large to fit in FLASH memory segment)
-                0x0000000000040bcc                __log_dynamic_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
+                0x0000000000040bc8                __log_dynamic_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
 
 .log_dynamic_data
-                0x00000000200032c8        0x0 load address 0x0000000000040bcc
+                0x00000000200032c8        0x0 load address 0x0000000000040bc8
                 0x00000000200032c8                __log_dynamic_data_start__ = .
  *(SORT_BY_NAME(.log_dynamic_data*))
                 0x00000000200032c8                __log_dynamic_data_end__ = (__log_dynamic_data_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000000                __log_dynamic_data_size__ = SIZEOF (.log_dynamic_data)
-                0x0000000000040bcc                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
+                0x0000000000040bc8                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_load_start__ == __log_dynamic_data_load_end__) || ((__log_dynamic_data_load_end__ >= __FLASH_segment_start__) && (__log_dynamic_data_load_end__ <= __FLASH_segment_end__))), error: .log_dynamic_data is too large to fit in FLASH memory segment)
 
 .log_dynamic_data_run
@@ -18418,14 +18418,14 @@ Linker script and memory map
                 0x00000000200032c8                __stop_log_dynamic_data = __log_dynamic_data_run_end__
                 0x00000000200032c8                __log_dynamic_data_run_load_end__ = __log_dynamic_data_run_end__
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_run_start__ == __log_dynamic_data_run_end__) || ((__log_dynamic_data_run_end__ >= __RAM_segment_start__) && (__log_dynamic_data_run_end__ <= __RAM_segment_end__))), error: .log_dynamic_data_run is too large to fit in RAM memory segment)
-                0x0000000000040bcc                __fs_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
+                0x0000000000040bc8                __fs_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
 
-.fs_data        0x00000000200032c8        0x0 load address 0x0000000000040bcc
+.fs_data        0x00000000200032c8        0x0 load address 0x0000000000040bc8
                 0x00000000200032c8                __fs_data_start__ = .
  *(.fs_data*)
                 0x00000000200032c8                __fs_data_end__ = (__fs_data_start__ + SIZEOF (.fs_data))
                 0x0000000000000000                __fs_data_size__ = SIZEOF (.fs_data)
-                0x0000000000040bcc                __fs_data_load_end__ = (__fs_data_load_start__ + SIZEOF (.fs_data))
+                0x0000000000040bc8                __fs_data_load_end__ = (__fs_data_load_start__ + SIZEOF (.fs_data))
                 0x0000000000000001                . = ASSERT (((__fs_data_load_start__ == __fs_data_load_end__) || ((__fs_data_load_end__ >= __FLASH_segment_start__) && (__fs_data_load_end__ <= __FLASH_segment_end__))), error: .fs_data is too large to fit in FLASH memory segment)
 
 .fs_data_run    0x00000000200032c8        0x0
@@ -18437,15 +18437,15 @@ Linker script and memory map
                 0x00000000200032c8                __stop_fs_data = __fs_data_run_end__
                 0x00000000200032c8                __fs_data_run_load_end__ = __fs_data_run_end__
                 0x0000000000000001                . = ASSERT (((__fs_data_run_start__ == __fs_data_run_end__) || ((__fs_data_run_end__ >= __RAM_segment_start__) && (__fs_data_run_end__ <= __RAM_segment_end__))), error: .fs_data_run is too large to fit in RAM memory segment)
-                0x0000000000040bcc                __cli_sorted_cmd_ptrs_load_start__ = ALIGN ((__fs_data_load_start__ + SIZEOF (.fs_data)), 0x4)
+                0x0000000000040bc8                __cli_sorted_cmd_ptrs_load_start__ = ALIGN ((__fs_data_load_start__ + SIZEOF (.fs_data)), 0x4)
 
 .cli_sorted_cmd_ptrs
-                0x00000000200032c8        0x0 load address 0x0000000000040bcc
+                0x00000000200032c8        0x0 load address 0x0000000000040bc8
                 0x00000000200032c8                __cli_sorted_cmd_ptrs_start__ = .
  *(.cli_sorted_cmd_ptrs*)
                 0x00000000200032c8                __cli_sorted_cmd_ptrs_end__ = (__cli_sorted_cmd_ptrs_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
                 0x0000000000000000                __cli_sorted_cmd_ptrs_size__ = SIZEOF (.cli_sorted_cmd_ptrs)
-                0x0000000000040bcc                __cli_sorted_cmd_ptrs_load_end__ = (__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
+                0x0000000000040bc8                __cli_sorted_cmd_ptrs_load_end__ = (__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
                 0x0000000000000001                . = ASSERT (((__cli_sorted_cmd_ptrs_load_start__ == __cli_sorted_cmd_ptrs_load_end__) || ((__cli_sorted_cmd_ptrs_load_end__ >= __FLASH_segment_start__) && (__cli_sorted_cmd_ptrs_load_end__ <= __FLASH_segment_end__))), error: .cli_sorted_cmd_ptrs is too large to fit in FLASH memory segment)
 
 .cli_sorted_cmd_ptrs_run
@@ -18480,430 +18480,429 @@ Linker script and memory map
                 0x00000000200032c8                __stop_nrf_mesh_ram = __nrf_mesh_ram_end__
                 0x00000000200032c8                __nrf_mesh_ram_load_end__ = __nrf_mesh_ram_end__
                 0x0000000000000001                . = ASSERT (((__nrf_mesh_ram_start__ == __nrf_mesh_ram_end__) || ((__nrf_mesh_ram_end__ >= __RAM_segment_start__) && (__nrf_mesh_ram_end__ <= __RAM_segment_end__))), error: .nrf_mesh_ram is too large to fit in RAM memory segment)
-                0x0000000000040bcc                __nrf_mesh_flash_load_start__ = ALIGN ((__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs)), 0x4)
+                0x0000000000040bc8                __nrf_mesh_flash_load_start__ = ALIGN ((__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs)), 0x4)
 
 .nrf_mesh_flash
-                0x0000000000040bcc       0xb8
-                0x0000000000040bcc                __nrf_mesh_flash_start__ = .
-                0x0000000000040bcc                __start_nrf_mesh_flash = __nrf_mesh_flash_start__
+                0x0000000000040bc8       0xb8
+                0x0000000000040bc8                __nrf_mesh_flash_start__ = .
+                0x0000000000040bc8                __start_nrf_mesh_flash = __nrf_mesh_flash_start__
  *(SORT_BY_NAME(.nrf_mesh_flash.*))
  .nrf_mesh_flash.mesh_config_entries__0
-                0x0000000000040bcc        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
-                0x0000000000040bcc                __nrf_mesh_start_mesh_config_entries
+                0x0000000000040bc8        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
+                0x0000000000040bc8                __nrf_mesh_start_mesh_config_entries
  .nrf_mesh_flash.mesh_config_entries__1
-                0x0000000000040bcc       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
-                0x0000000000040bcc                m_heartbeat_publication_params
+                0x0000000000040bc8       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
+                0x0000000000040bc8                m_heartbeat_publication_params
  .nrf_mesh_flash.mesh_config_entries__1
-                0x0000000000040be8       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
-                0x0000000000040be8                m_net_beacon_enable_params
+                0x0000000000040be4       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
+                0x0000000000040be4                m_net_beacon_enable_params
  .nrf_mesh_flash.mesh_config_entries__1
-                0x0000000000040c04       0x54 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
-                0x0000000000040c04                m_mesh_opt_core_adv_addr_params
-                0x0000000000040c20                m_mesh_opt_core_tx_power_params
-                0x0000000000040c3c                m_mesh_opt_core_adv_params
+                0x0000000000040c00       0x54 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
+                0x0000000000040c00                m_mesh_opt_core_adv_addr_params
+                0x0000000000040c1c                m_mesh_opt_core_tx_power_params
+                0x0000000000040c38                m_mesh_opt_core_adv_params
  .nrf_mesh_flash.mesh_config_entries__1
-                0x0000000000040c58       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
-                0x0000000000040c58                m_ecdh_offloading_params
+                0x0000000000040c54       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+                0x0000000000040c54                m_ecdh_offloading_params
  .nrf_mesh_flash.mesh_config_entries__2
-                0x0000000000040c74        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
-                0x0000000000040c74                __nrf_mesh_stop_mesh_config_entries
+                0x0000000000040c70        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
+                0x0000000000040c70                __nrf_mesh_stop_mesh_config_entries
  .nrf_mesh_flash.mesh_config_entry_listeners__0
-                0x0000000000040c74        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
-                0x0000000000040c74                __nrf_mesh_start_mesh_config_entry_listeners
+                0x0000000000040c70        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
+                0x0000000000040c70                __nrf_mesh_start_mesh_config_entry_listeners
  .nrf_mesh_flash.mesh_config_entry_listeners__1
-                0x0000000000040c74        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
-                0x0000000000040c74                m_heartbeat_relay_listener
+                0x0000000000040c70        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
+                0x0000000000040c70                m_heartbeat_relay_listener
  .nrf_mesh_flash.mesh_config_entry_listeners__2
-                0x0000000000040c7c        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
-                0x0000000000040c7c                __nrf_mesh_stop_mesh_config_entry_listeners
+                0x0000000000040c78        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
+                0x0000000000040c78                __nrf_mesh_stop_mesh_config_entry_listeners
  .nrf_mesh_flash.mesh_config_files__0
-                0x0000000000040c7c        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
-                0x0000000000040c7c                __nrf_mesh_start_mesh_config_files
+                0x0000000000040c78        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
+                0x0000000000040c78                __nrf_mesh_start_mesh_config_files
  .nrf_mesh_flash.mesh_config_files__1
-                0x0000000000040c7c        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_opt.o
-                0x0000000000040c7c                m_mesh_opt_core_file
+                0x0000000000040c78        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_opt.o
+                0x0000000000040c78                m_mesh_opt_core_file
  .nrf_mesh_flash.mesh_config_files__2
-                0x0000000000040c84        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
-                0x0000000000040c84                __nrf_mesh_stop_mesh_config_files
-                0x0000000000040c84                __nrf_mesh_flash_end__ = (__nrf_mesh_flash_start__ + SIZEOF (.nrf_mesh_flash))
+                0x0000000000040c80        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_config.o
+                0x0000000000040c80                __nrf_mesh_stop_mesh_config_files
+                0x0000000000040c80                __nrf_mesh_flash_end__ = (__nrf_mesh_flash_start__ + SIZEOF (.nrf_mesh_flash))
                 0x00000000000000b8                __nrf_mesh_flash_size__ = SIZEOF (.nrf_mesh_flash)
-                0x0000000000040c84                __stop_nrf_mesh_flash = __nrf_mesh_flash_end__
-                0x0000000000040c84                __nrf_mesh_flash_load_end__ = __nrf_mesh_flash_end__
+                0x0000000000040c80                __stop_nrf_mesh_flash = __nrf_mesh_flash_end__
+                0x0000000000040c80                __nrf_mesh_flash_load_end__ = __nrf_mesh_flash_end__
                 0x0000000000000001                . = ASSERT (((__nrf_mesh_flash_start__ == __nrf_mesh_flash_end__) || ((__nrf_mesh_flash_end__ >= __FLASH_segment_start__) && (__nrf_mesh_flash_end__ <= __FLASH_segment_end__))), error: .nrf_mesh_flash is too large to fit in FLASH memory segment)
-                0x0000000000040c84                __dtors_load_start__ = ALIGN (__nrf_mesh_flash_end__, 0x4)
+                0x0000000000040c80                __dtors_load_start__ = ALIGN (__nrf_mesh_flash_end__, 0x4)
 
-.dtors          0x0000000000040c84        0x0
-                0x0000000000040c84                __dtors_start__ = .
+.dtors          0x0000000000040c80        0x0
+                0x0000000000040c80                __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x0000000000040c84                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x0000000000040c80                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x0000000000040c84                __dtors_load_end__ = __dtors_end__
+                0x0000000000040c80                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ >= __FLASH_segment_start__) && (__dtors_end__ <= __FLASH_segment_end__))), error: .dtors is too large to fit in FLASH memory segment)
-                0x0000000000040c84                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x0000000000040c80                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x0000000000040c84        0x0
-                0x0000000000040c84                __ctors_start__ = .
+.ctors          0x0000000000040c80        0x0
+                0x0000000000040c80                __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x0000000000040c84                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x0000000000040c80                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x0000000000040c84                __ctors_load_end__ = __ctors_end__
+                0x0000000000040c80                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ >= __FLASH_segment_start__) && (__ctors_end__ <= __FLASH_segment_end__))), error: .ctors is too large to fit in FLASH memory segment)
-                0x0000000000040c84                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x0000000000040c80                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x0000000000040c84     0x1668
-                0x0000000000040c84                __rodata_start__ = .
+.rodata         0x0000000000040c80     0x165c
+                0x0000000000040c80                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000000040c84        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
+ .rodata        0x0000000000040c80        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
  .rodata.initialize.str1.4
-                0x0000000000040c88       0x56 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
- *fill*         0x0000000000040cde        0x2 
+                0x0000000000040c84       0x56 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
+ *fill*         0x0000000000040cda        0x2 
  .rodata.mesh_init.str1.4
-                0x0000000000040ce0       0x42 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
- *fill*         0x0000000000040d22        0x2 
+                0x0000000000040cdc       0x42 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
+ *fill*         0x0000000000040d1e        0x2 
  .rodata.start.str1.4
-                0x0000000000040d24       0x7e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
- *fill*         0x0000000000040da2        0x2 
+                0x0000000000040d20       0x7e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
+ *fill*         0x0000000000040d9e        0x2 
  .rodata.static_auth_data.12606
-                0x0000000000040da4       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
+                0x0000000000040da0       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
  .rodata.ble_enable.str1.4
-                0x0000000000040db4       0x9d build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_softdevice_init.o
- *fill*         0x0000000000040e51        0x3 
+                0x0000000000040db0       0x9d build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_softdevice_init.o
+ *fill*         0x0000000000040e4d        0x3 
  .rodata.mesh_softdevice_init.str1.4
-                0x0000000000040e54       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_softdevice_init.o
- .rodata        0x0000000000040e70        0xb build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_provisionee.o
- *fill*         0x0000000000040e7b        0x1 
+                0x0000000000040e50       0x1c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_softdevice_init.o
+ .rodata        0x0000000000040e6c        0xb build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_provisionee.o
+ *fill*         0x0000000000040e77        0x1 
  .rodata.m_blink_timer
-                0x0000000000040e7c        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/simple_hal.o
+                0x0000000000040e78        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/simple_hal.o
  .rodata.m_buttons_list
-                0x0000000000040e80        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/simple_hal.o
+                0x0000000000040e7c        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/simple_hal.o
  .rodata.app_error_fault_handler.str1.4
-                0x0000000000040e84       0xe9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_error_weak.o
+                0x0000000000040e80       0xe9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_error_weak.o
  .rodata.mesh_assertion_handler.str1.4
-                0x0000000000040f6d       0xe9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/assertion_handler_weak.o
+                0x0000000000040f69       0xe9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/assertion_handler_weak.o
                                           0x1 (size before relaxing)
- *fill*         0x0000000000040f6d        0x3 
+ *fill*         0x0000000000040f69        0x3 
  .rodata.sar_ctx_cancel.str1.4
-                0x0000000000040f70       0x23 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
- *fill*         0x0000000000040f93        0x1 
+                0x0000000000040f6c       0x23 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
+ *fill*         0x0000000000040f8f        0x1 
  .rodata.sar_rx_ctx_create.str1.4
-                0x0000000000040f94       0x54 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
+                0x0000000000040f90       0x54 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
  .rodata.segack_packet_in.str1.4
-                0x0000000000040fe8       0x2e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
- *fill*         0x0000000000041016        0x2 
+                0x0000000000040fe4       0x2e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
+ *fill*         0x0000000000041012        0x2 
  .rodata.segmented_packet_tx.str1.4
-                0x0000000000041018       0x18 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
+                0x0000000000041014       0x18 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
  .rodata.test_transport_decrypt.str1.4
-                0x0000000000041030       0x13 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
- *fill*         0x0000000000041043        0x1 
+                0x000000000004102c       0x13 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
+ *fill*         0x000000000004103f        0x1 
  .rodata.trs_sar_seg_packet_in.str1.4
-                0x0000000000041044       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
+                0x0000000000041040       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
  .rodata.upper_transport_access_packet_in.str1.4
-                0x0000000000041054       0x29 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
- *fill*         0x000000000004107d        0x3 
+                0x0000000000041050       0x29 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/transport.o
+ *fill*         0x0000000000041079        0x3 
  .rodata.m_all_operations
-                0x0000000000041080       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_flash.o
+                0x000000000004107c       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_flash.o
  .rodata.types_lookup.10046
-                0x0000000000041090        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh_utils.o
+                0x000000000004108c        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh_utils.o
  .rodata.__func__.12720
-                0x0000000000041094       0x15 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh.o
- *fill*         0x00000000000410a9        0x3 
+                0x0000000000041090       0x15 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh.o
+ *fill*         0x00000000000410a5        0x3 
  .rodata.nrf_mesh_enable.str1.4
-                0x00000000000410ac       0x25 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh.o
- *fill*         0x00000000000410d1        0x3 
+                0x00000000000410a8       0x25 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh.o
+ *fill*         0x00000000000410cd        0x3 
  .rodata.nrf_mesh_listen.str1.4
-                0x00000000000410d4       0x97 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh.o
+                0x00000000000410d0       0x97 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh.o
  .rodata.nrf_mesh_packet_send.str1.4
-                0x000000000004116b       0x97 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh.o
+                0x0000000000041167       0x97 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh.o
                                           0x4 (size before relaxing)
- *fill*         0x000000000004116b        0x1 
- .rodata        0x000000000004116c       0x18 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/enc.o
+ *fill*         0x0000000000041167        0x1 
+ .rodata        0x0000000000041168       0x18 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/enc.o
  .rodata.packet_relay.str1.4
-                0x0000000000041184       0x6d build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/network.o
- *fill*         0x00000000000411f1        0x3 
+                0x0000000000041180       0x6d build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/network.o
+ *fill*         0x00000000000411ed        0x3 
  .rodata.try_decrypt.str1.4
-                0x00000000000411f4       0x53 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_packet.o
+                0x00000000000411f0       0x53 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_packet.o
                                          0x5c (size before relaxing)
- *fill*         0x0000000000041247        0x1 
- .rodata        0x0000000000041248        0x7 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh_keygen.o
- *fill*         0x000000000004124f        0x1 
+ *fill*         0x0000000000041243        0x1 
+ .rodata        0x0000000000041244        0x7 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh_keygen.o
+ *fill*         0x000000000004124b        0x1 
  .rodata.log_callback_rtt.str1.4
-                0x0000000000041250       0x15 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/log.o
- *fill*         0x0000000000041265        0x3 
+                0x000000000004124c       0x15 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/log.o
+ *fill*         0x0000000000041261        0x3 
  .rodata.str1.4
-                0x0000000000041268       0x11 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/log.o
- *fill*         0x0000000000041279        0x3 
+                0x0000000000041264       0x11 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/log.o
+ *fill*         0x0000000000041275        0x3 
  .rodata.beacon_packet_in.str1.4
-                0x000000000004127c       0x75 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/beacon.o
+                0x0000000000041278       0x75 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/beacon.o
                                          0x80 (size before relaxing)
- *fill*         0x00000000000412f1        0x3 
- .rodata        0x00000000000412f4        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
+ *fill*         0x00000000000412ed        0x3 
+ .rodata        0x00000000000412f0        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
  .rodata.__compound_literal.0
+                0x00000000000412f4        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
+ .rodata.__compound_literal.1
                 0x00000000000412f8        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
- .rodata.__compound_literal.1
-                0x00000000000412fc        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
  .rodata.cp_handler
-                0x0000000000041300        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
- .rodata        0x0000000000041308        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
+                0x00000000000412fc        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/heartbeat.o
+ .rodata        0x0000000000041304        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
  .rodata.__compound_literal.0
-                0x000000000004130c        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
+                0x0000000000041308        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
  .rodata.beacon_tx.str1.4
-                0x0000000000041310       0x57 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
- *fill*         0x0000000000041367        0x1 
+                0x000000000004130c       0x57 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
+ *fill*         0x0000000000041363        0x1 
  .rodata.net_beacon_init.str1.4
-                0x0000000000041368        0x5 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
- *fill*         0x000000000004136d        0x3 
- .rodata        0x0000000000041370        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
+                0x0000000000041364        0x5 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/net_beacon.o
+ *fill*         0x0000000000041369        0x3 
+ .rodata        0x000000000004136c        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
  .rodata.__compound_literal.0
-                0x000000000004137c        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
+                0x0000000000041378        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
  .rodata.__compound_literal.1
-                0x0000000000041380        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
+                0x000000000004137c        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
  .rodata.__compound_literal.2
-                0x0000000000041384        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
+                0x0000000000041380        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
  .rodata.m_default_tx_power
-                0x0000000000041388        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
- *fill*         0x0000000000041389        0x3 
+                0x0000000000041384        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
+ *fill*         0x0000000000041385        0x3 
  .rodata.m_interface
-                0x000000000004138c        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
+                0x0000000000041388        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/core_tx_adv.o
  .rodata.m_cmd_handlers
-                0x0000000000041398       0xb0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_access.o
+                0x0000000000041394       0xb0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_access.o
  .rodata.m_cmd_handlers
-                0x0000000000041448       0x48 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial.o
+                0x0000000000041444       0x48 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial.o
  .rodata.serial_process_cmd.str1.4
-                0x0000000000041490       0x17 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial.o
- *fill*         0x00000000000414a7        0x1 
+                0x000000000004148c       0x17 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial.o
+ *fill*         0x00000000000414a3        0x1 
  .rodata.serial_start.str1.4
-                0x00000000000414a8       0x8a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial.o
- *fill*         0x0000000000041532        0x2 
+                0x00000000000414a4       0x8a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial.o
+ *fill*         0x000000000004152e        0x2 
  .rodata.serial_handler_prov_init.str1.4
-                0x0000000000041534       0x6e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_prov.o
- *fill*         0x00000000000415a2        0x2 
+                0x0000000000041530       0x6e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_prov.o
+ *fill*         0x000000000004159e        0x2 
  .rodata.lengths.12750
-                0x00000000000415a4        0x7 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_dfu.o
- *fill*         0x00000000000415ab        0x1 
+                0x00000000000415a0        0x7 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_dfu.o
+ *fill*         0x00000000000415a7        0x1 
  .rodata.m_handlers
-                0x00000000000415ac       0xe8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_mesh.o
+                0x00000000000415a8       0xe8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_mesh.o
  .rodata.m_cmd_handlers
-                0x0000000000041694       0x18 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_models.o
+                0x0000000000041690       0x18 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_models.o
  .rodata.m_cmd_handlers
-                0x00000000000416ac       0x58 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_device.o
+                0x00000000000416a8       0x58 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/serial_handler_device.o
  .rodata.mesh_msg_handle.str1.4
-                0x0000000000041704       0x13 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/access.o
- *fill*         0x0000000000041717        0x1 
+                0x0000000000041700       0x13 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/access.o
+ *fill*         0x0000000000041713        0x1 
  .rodata.packet_tx.str1.4
-                0x0000000000041718       0x5c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/access.o
+                0x0000000000041714       0x5c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/access.o
                                          0x64 (size before relaxing)
  .rodata.multiply_de_bruijn_bit_position.10218
-                0x0000000000041774       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/device_state_manager.o
+                0x0000000000041770       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/device_state_manager.o
  .rodata.m_ble_adv_channels
-                0x0000000000041794        0x3 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/advertiser.o
- *fill*         0x0000000000041797        0x1 
+                0x0000000000041790        0x3 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/advertiser.o
+ *fill*         0x0000000000041793        0x1 
  .rodata.radio_mode_to_us_per_byte.10401
-                0x0000000000041798        0x6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/broadcast.o
- *fill*         0x000000000004179e        0x2 
+                0x0000000000041794        0x6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/broadcast.o
+ *fill*         0x000000000004179a        0x2 
  .rodata.channel_rf_offsets.9792
-                0x00000000000417a0       0x28 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/radio_config.o
- .rodata        0x00000000000417c8        0x3 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/scanner.o
- *fill*         0x00000000000417cb        0x1 
+                0x000000000004179c       0x28 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/radio_config.o
+ .rodata        0x00000000000417c4        0x3 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/scanner.o
+ *fill*         0x00000000000417c7        0x1 
  .rodata._DoInit.str1.4
-                0x00000000000417cc       0x17 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/SEGGER_RTT.o
- *fill*         0x00000000000417e3        0x1 
+                0x00000000000417c8       0x17 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/SEGGER_RTT.o
+ *fill*         0x00000000000417df        0x1 
  .rodata._aV2C.5856
-                0x00000000000417e4       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/SEGGER_RTT_printf.o
+                0x00000000000417e0       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/SEGGER_RTT_printf.o
  .rodata.curve_secp256r1
-                0x00000000000417f4       0xb0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/uECC.o
- *fill*         0x00000000000418a4        0xc 
+                0x00000000000417f0       0xb0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/uECC.o
  .rodata.delay_bytecode.8986
-                0x00000000000418b0        0x6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_timer.o
- *fill*         0x00000000000418b6        0xa 
+                0x00000000000418a0        0x6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_timer.o
+ *fill*         0x00000000000418a6        0xa 
  .rodata.delay_bytecode.8785
-                0x00000000000418c0        0x6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
- *fill*         0x00000000000418c6        0x2 
+                0x00000000000418b0        0x6 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
+ *fill*         0x00000000000418b6        0x2 
  .rodata.epin_bitpos.9651
-                0x00000000000418c8        0x9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
- *fill*         0x00000000000418d1        0x3 
+                0x00000000000418b8        0x9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
+ *fill*         0x00000000000418c1        0x3 
  .rodata.epin_endev.9646
-                0x00000000000418d4       0x12 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
- *fill*         0x00000000000418e6        0x2 
+                0x00000000000418c4       0x12 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
+ *fill*         0x00000000000418d6        0x2 
  .rodata.epout_bitpos.9652
-                0x00000000000418e8        0x9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
- *fill*         0x00000000000418f1        0x3 
+                0x00000000000418d8        0x9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
+ *fill*         0x00000000000418e1        0x3 
  .rodata.epout_endev.9647
-                0x00000000000418f4       0x12 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
- *fill*         0x0000000000041906        0x2 
- .rodata.m_isr  0x0000000000041908       0x64 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
+                0x00000000000418e4       0x12 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
+ *fill*         0x00000000000418f6        0x2 
+ .rodata.m_isr  0x00000000000418f8       0x64 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_drv_usbd.o
  .rodata.m_prov_callbacks
-                0x000000000004196c       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_provisioner.o
+                0x000000000004195c       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_provisioner.o
  .rodata.m_prov_callbacks
-                0x000000000004197c       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_provisionee.o
+                0x000000000004196c       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_provisionee.o
  .rodata.prov_provisionee_cb_ack_received.str1.4
-                0x000000000004198c       0x77 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_provisionee.o
- *fill*         0x0000000000041a03        0x1 
+                0x000000000004197c       0x77 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_provisionee.o
+ *fill*         0x00000000000419f3        0x1 
  .rodata.multiply_de_bruijn_bit_position.10171
-                0x0000000000041a04       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh_prov.o
+                0x00000000000419f4       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_mesh_prov.o
  .rodata.pdu_sizes.11279
-                0x0000000000041a24        0xa build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/provisioning.o
- *fill*         0x0000000000041a2e        0x2 
+                0x0000000000041a14        0xa build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/provisioning.o
+ *fill*         0x0000000000041a1e        0x2 
  .rodata.C.10.12142
-                0x0000000000041a30        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+                0x0000000000041a20        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
  .rodata.C.9.12138
-                0x0000000000041a34        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+                0x0000000000041a24        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
  .rodata.__compound_literal.0
-                0x0000000000041a38        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+                0x0000000000041a28        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
  .rodata.alphanumeric.12063
-                0x0000000000041a3c       0x25 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+                0x0000000000041a2c       0x25 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
  .rodata.m_ecdh_offloading_default
-                0x0000000000041a61        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
- *fill*         0x0000000000041a62        0x2 
+                0x0000000000041a51        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+ *fill*         0x0000000000041a52        0x2 
  .rodata.numeric_max.12057
-                0x0000000000041a64       0x24 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+                0x0000000000041a54       0x24 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
  .rodata.prov_utils_authentication_values_derive.str1.4
-                0x0000000000041a88        0x5 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
- *fill*         0x0000000000041a8d        0x3 
+                0x0000000000041a78        0x5 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+ *fill*         0x0000000000041a7d        0x3 
  .rodata.prov_utils_derive_keys.str1.4
-                0x0000000000041a90       0x15 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
- *fill*         0x0000000000041aa5        0x3 
+                0x0000000000041a80       0x15 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_utils.o
+ *fill*         0x0000000000041a95        0x3 
  .rodata.add_active_bearer.str1.4
-                0x0000000000041aa8       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
+                0x0000000000041a98       0x2c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
  .rodata.crctable.11307
-                0x0000000000041ad4      0x100 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
+                0x0000000000041ac4      0x100 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
  .rodata.handle_control_packet.str1.4
-                0x0000000000041bd4       0xbf build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
- *fill*         0x0000000000041c93        0x1 
+                0x0000000000041bc4       0xbf build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
+ *fill*         0x0000000000041c83        0x1 
  .rodata.handle_transaction_ack_packet.str1.4
-                0x0000000000041c94       0x3c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
+                0x0000000000041c84       0x3c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
  .rodata.handle_transaction_continuation_packet.str1.4
-                0x0000000000041cd0       0x7a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
- *fill*         0x0000000000041d4a        0x2 
+                0x0000000000041cc0       0x7a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
+ *fill*         0x0000000000041d3a        0x2 
  .rodata.handle_transaction_start_packet.str1.4
-                0x0000000000041d4c      0x10a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
- *fill*         0x0000000000041e56        0x2 
+                0x0000000000041d3c      0x10a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
+ *fill*         0x0000000000041e46        0x2 
  .rodata.interface.11537
-                0x0000000000041e58       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
+                0x0000000000041e48       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
  .rodata.tx_retry_cb.str1.4
-                0x0000000000041e6c       0x5c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
+                0x0000000000041e5c       0x5c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/prov_bearer_adv.o
  .rodata.opcode_handlers
-                0x0000000000041ec8      0x170 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/config_server.o
+                0x0000000000041eb8      0x170 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/config_server.o
  .rodata.m_opcode_handlers
-                0x0000000000042038       0x58 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/health_server.o
+                0x0000000000042028       0x58 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/health_server.o
  .rodata.multiply_de_bruijn_bit_position.10157
-                0x0000000000042090       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/health_server.o
+                0x0000000000042080       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/health_server.o
  .rodata.cdc_acm_user_ev_handler.str1.4
-                0x00000000000420b0       0x65 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
- *fill*         0x0000000000042115        0x3 
+                0x00000000000420a0       0x65 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+ *fill*         0x0000000000042105        0x3 
  .rodata.m_app_cdc_acm
-                0x0000000000042118       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
-                0x0000000000042118                m_app_cdc_acm
+                0x0000000000042108       0x20 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+                0x0000000000042108                m_app_cdc_acm
  .rodata.serial_uart_byte_send.str1.4
-                0x0000000000042138       0x1a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
- *fill*         0x0000000000042152        0x2 
+                0x0000000000042128       0x1a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+ *fill*         0x0000000000042142        0x2 
  .rodata.serial_uart_init.str1.4
-                0x0000000000042154        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+                0x0000000000042144        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
  .rodata.serial_uart_receive_set.str1.4
-                0x0000000000042160        0xf build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
- *fill*         0x000000000004216f        0x1 
+                0x0000000000042150        0xf build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+ *fill*         0x000000000004215f        0x1 
  .rodata.usbd_user_ev_handler.str1.4
-                0x0000000000042170       0x24 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+                0x0000000000042160       0x24 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
  .rodata.evt_data.11073
+                0x0000000000042184        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+ *fill*         0x0000000000042185        0x3 
+ .rodata.evt_data.11181
+                0x0000000000042188        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+ *fill*         0x0000000000042189        0x3 
+ .rodata.evt_data.11201
+                0x000000000004218c        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+ *fill*         0x000000000004218d        0x3 
+ .rodata.evt_data.11204
+                0x0000000000042190        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+ *fill*         0x0000000000042191        0x3 
+ .rodata.evt_data.11222
                 0x0000000000042194        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
  *fill*         0x0000000000042195        0x3 
- .rodata.evt_data.11181
-                0x0000000000042198        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
- *fill*         0x0000000000042199        0x3 
- .rodata.evt_data.11201
-                0x000000000004219c        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
- *fill*         0x000000000004219d        0x3 
- .rodata.evt_data.11204
-                0x00000000000421a0        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
- *fill*         0x00000000000421a1        0x3 
- .rodata.evt_data.11222
-                0x00000000000421a4        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
- *fill*         0x00000000000421a5        0x3 
  .rodata.app_usbd_core_inst
-                0x00000000000421a8       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
-                0x00000000000421a8                app_usbd_core_inst
+                0x0000000000042198       0x10 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x0000000000042198                app_usbd_core_inst
  .rodata.evt_data.10263
-                0x00000000000421b8        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
- *fill*         0x00000000000421b9        0x3 
+                0x00000000000421a8        0x1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+ *fill*         0x00000000000421a9        0x3 
  .rodata.m_configuration_dsc
-                0x00000000000421bc        0x9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
- *fill*         0x00000000000421c5        0x3 
+                0x00000000000421ac        0x9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+ *fill*         0x00000000000421b5        0x3 
  .rodata.m_core_methods
-                0x00000000000421c8       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x00000000000421b8       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .rodata.m_device_dsc
-                0x00000000000421dc       0x12 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
- *fill*         0x00000000000421ee        0x2 
+                0x00000000000421cc       0x12 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+ *fill*         0x00000000000421de        0x2 
  .rodata.m_setup_data_handler_empty_desc
-                0x00000000000421f0        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x00000000000421e0        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .rodata.usbd_descriptor_feeder_desc
-                0x00000000000421f8        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+                0x00000000000421e8        0x8 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
  .rodata.app_usbd_serial_num_generate.str1.4
-                0x0000000000042200        0x9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_serial_num.o
- *fill*         0x0000000000042209        0x3 
+                0x00000000000421f0        0x9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_serial_num.o
+ *fill*         0x00000000000421f9        0x3 
  .rodata.__compound_literal.1
-                0x000000000004220c        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+                0x00000000000421fc        0x4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
  .rodata.__compound_literal.3
-                0x0000000000042210       0x2a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
- *fill*         0x000000000004223a        0x2 
+                0x0000000000042200       0x2a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+ *fill*         0x000000000004222a        0x2 
  .rodata.__compound_literal.5
-                0x000000000004223c       0x1e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
- *fill*         0x000000000004225a        0x2 
+                0x000000000004222c       0x1e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+ *fill*         0x000000000004224a        0x2 
  .rodata.__compound_literal.7
-                0x000000000004225c       0x1a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
- *fill*         0x0000000000042276        0x2 
+                0x000000000004224c       0x1a build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+ *fill*         0x0000000000042266        0x2 
  .rodata.__compound_literal.9
-                0x0000000000042278        0xe build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
- *fill*         0x0000000000042286        0x2 
+                0x0000000000042268        0xe build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+ *fill*         0x0000000000042276        0x2 
  .rodata.m_string_dsc
-                0x0000000000042288       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+                0x0000000000042278       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
  .rodata.m_string_translation
-                0x000000000004229c        0x5 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
- *fill*         0x00000000000422a1        0x3 
+                0x000000000004228c        0x5 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+ *fill*         0x0000000000042291        0x3 
  .rodata.app_usbd_cdc_acm_class_methods
-                0x00000000000422a4       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
-                0x00000000000422a4                app_usbd_cdc_acm_class_methods
+                0x0000000000042294       0x14 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+                0x0000000000042294                app_usbd_cdc_acm_class_methods
  .rodata.sdh_soc_observers
-                0x00000000000422b8        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
+                0x00000000000422a8        0xc build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
  .rodata.libc.__RAL_hex_lc
-                0x00000000000422c4       0x10 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000422c4                __RAL_hex_lc
+                0x00000000000422b4       0x10 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000422b4                __RAL_hex_lc
  .rodata.libc.__RAL_hex_uc
-                0x00000000000422d4       0x10 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000422d4                __RAL_hex_uc
+                0x00000000000422c4       0x10 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000422c4                __RAL_hex_uc
  .rodata.libc.__vfprintf_int.str1.4
-                0x00000000000422e4        0x8 G:/Programing/Segger/lib/libvfprintf_v7em_fpv4_sp_d16_hard_t_le_eabi.o
+                0x00000000000422d4        0x8 G:/Programing/Segger/lib/libvfprintf_v7em_fpv4_sp_d16_hard_t_le_eabi.o
                                           0x7 (size before relaxing)
-                0x00000000000422ec                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x0000000000001668                __rodata_size__ = SIZEOF (.rodata)
-                0x00000000000422ec                __rodata_load_end__ = __rodata_end__
+                0x00000000000422dc                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x000000000000165c                __rodata_size__ = SIZEOF (.rodata)
+                0x00000000000422dc                __rodata_load_end__ = __rodata_end__
 
-.rel.dyn        0x00000000000422ec        0x0
- .rel.iplt      0x00000000000422ec        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
+.rel.dyn        0x00000000000422dc        0x0
+ .rel.iplt      0x00000000000422dc        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ >= __FLASH_segment_start__) && (__rodata_end__ <= __FLASH_segment_end__))), error: .rodata is too large to fit in FLASH memory segment)
-                0x00000000000422ec                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x00000000000422dc                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x00000000000422ec        0x0
-                0x00000000000422ec                __ARM.exidx_start__ = .
-                0x00000000000422ec                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x00000000000422dc        0x0
+                0x00000000000422dc                __ARM.exidx_start__ = .
+                0x00000000000422dc                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x00000000000422ec                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x00000000000422dc                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x00000000000422ec                __exidx_end = __ARM.exidx_end__
-                0x00000000000422ec                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x00000000000422dc                __exidx_end = __ARM.exidx_end__
+                0x00000000000422dc                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ >= __FLASH_segment_start__) && (__ARM.exidx_end__ <= __FLASH_segment_end__))), error: .ARM.exidx is too large to fit in FLASH memory segment)
-                0x00000000000422ec                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x00000000000422dc                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x00000000200032c8        0x0 load address 0x00000000000422ec
+.fast           0x00000000200032c8        0x0 load address 0x00000000000422dc
                 0x00000000200032c8                __fast_start__ = .
  *(.fast .fast.*)
                 0x00000000200032c8                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x00000000000422ec                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x00000000000422dc                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ >= __FLASH_segment_start__) && (__fast_load_end__ <= __FLASH_segment_end__))), error: .fast is too large to fit in FLASH memory segment)
 
 .fast_run       0x00000000200032c8        0x0
@@ -18913,9 +18912,9 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = SIZEOF (.fast_run)
                 0x00000000200032c8                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ >= __RAM_segment_start__) && (__fast_run_end__ <= __RAM_segment_end__))), error: .fast_run is too large to fit in RAM memory segment)
-                0x00000000000422ec                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x00000000000422dc                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x00000000200032c8       0x50 load address 0x00000000000422ec
+.data           0x00000000200032c8       0x50 load address 0x00000000000422dc
                 0x00000000200032c8                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.wait.9156
@@ -18958,13 +18957,13 @@ Linker script and memory map
                 0x0000000020003314        0x4 G:/Programing/Segger/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
                 0x0000000020003318                __data_end__ = (__data_start__ + SIZEOF (.data))
                 0x0000000000000050                __data_size__ = SIZEOF (.data)
-                0x000000000004233c                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x000000000004232c                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
                 0x0000000000000001                . = ASSERT (((__data_load_start__ == __data_load_end__) || ((__data_load_end__ >= __FLASH_segment_start__) && (__data_load_end__ <= __FLASH_segment_end__))), error: .data is too large to fit in FLASH memory segment)
 
-.data_run       0x00000000200032c8       0x50 load address 0x00000000000422ec
+.data_run       0x00000000200032c8       0x50 load address 0x00000000000422dc
                 0x00000000200032c8                __data_run_start__ = .
                 0x0000000020003318                . = MAX ((__data_run_start__ + SIZEOF (.data)), .)
  *fill*         0x00000000200032c8       0x50 
@@ -18972,16 +18971,16 @@ Linker script and memory map
                 0x0000000000000050                __data_run_size__ = SIZEOF (.data_run)
                 0x0000000020003318                __data_run_load_end__ = __data_run_end__
                 0x0000000000000001                . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ >= __RAM_segment_start__) && (__data_run_end__ <= __RAM_segment_end__))), error: .data_run is too large to fit in RAM memory segment)
-                0x000000000004233c                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x000000000004232c                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x0000000020003318        0x0 load address 0x000000000004233c
+.tdata          0x0000000020003318        0x0 load address 0x000000000004232c
                 0x0000000020003318                __tdata_start__ = .
  *(.tdata .tdata.*)
                 0x0000000020003318                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x000000000004233c                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x000000000004233c                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x000000000004233c                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
+                0x000000000004232c                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x000000000004232c                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x000000000004232c                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ >= __FLASH_segment_start__) && (__tdata_load_end__ <= __FLASH_segment_end__))), error: .tdata is too large to fit in FLASH memory segment)
 
 .tdata_run      0x0000000020003318        0x0
@@ -19838,7 +19837,7 @@ OUTPUT(build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/usb_serial_mesh_nrf5
  .debug_frame   0x000000000000cc6c       0x30 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_section_iter.o
  .debug_frame   0x000000000000cc9c       0x9c build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
 
-.debug_info     0x0000000000000000    0xbb0e4
+.debug_info     0x0000000000000000    0xbb0da
  .debug_info    0x0000000000000000     0x1d7e build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
  .debug_info    0x0000000000001d7e     0x16fd build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_softdevice_init.o
  .debug_info    0x000000000000347b     0x1fba build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/mesh_provisionee.o
@@ -19940,15 +19939,15 @@ OUTPUT(build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/usb_serial_mesh_nrf5
  .debug_info    0x00000000000a0ce5     0x8835 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/config_server.o
  .debug_info    0x00000000000a951a       0xf9 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/packed_index_list.o
  .debug_info    0x00000000000a9613     0x2106 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/health_server.o
- .debug_info    0x00000000000ab719     0x1a71 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
- .debug_info    0x00000000000ad18a     0x49f1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
- .debug_info    0x00000000000b1b7b     0x3144 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
- .debug_info    0x00000000000b4cbf      0xc57 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_serial_num.o
- .debug_info    0x00000000000b5916      0xc2b build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
- .debug_info    0x00000000000b6541     0x2fed build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
- .debug_info    0x00000000000b952e      0xac2 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
- .debug_info    0x00000000000b9ff0      0x6eb build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_section_iter.o
- .debug_info    0x00000000000ba6db      0xa09 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
+ .debug_info    0x00000000000ab719     0x1a67 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/usb_serial_uart.o
+ .debug_info    0x00000000000ad180     0x49f1 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd.o
+ .debug_info    0x00000000000b1b71     0x3144 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_core.o
+ .debug_info    0x00000000000b4cb5      0xc57 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_serial_num.o
+ .debug_info    0x00000000000b590c      0xc2b build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_string_desc.o
+ .debug_info    0x00000000000b6537     0x2fed build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/app_usbd_cdc_acm.o
+ .debug_info    0x00000000000b9524      0xac2 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_sdh_soc.o
+ .debug_info    0x00000000000b9fe6      0x6eb build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_section_iter.o
+ .debug_info    0x00000000000ba6d1      0xa09 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/nrf_clk_patch.o
 
 .debug_abbrev   0x0000000000000000    0x148fb
  .debug_abbrev  0x0000000000000000      0x3e4 build/usb_serial_mesh_nrf52840_xxAA_s140_6.0.0_Debug/obj/main.o
